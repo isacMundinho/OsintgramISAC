@@ -18,13 +18,13 @@ except:
 
 def printlogo():
     pc.printout(artwork.ascii_art, pc.RED)
-    pc.printout("----------------------------------------------\n\n", pc.YELLOW)
-    pc.printout("Digite 'list' para ver todos os comandos.\n")
-    pc.printout("Type 'FILE=y' to save results to files like '<target username>_<command>.txt (default is disabled)'\n")
-    pc.printout("Type 'FILE=n' to disable saving to files'\n")
+    pc.printout("----------------------------------------------\n\n", pc.RED)
+    pc.printout("Digite 'list' para ver todos os comandos.\n", pc.BLUE)
+    pc.printout("Digite 'FILE=y' para salvar os resultados em arquivos como '<target username>_<command>.txt (desabilitado por padrão)'\n", pc.BLUE))
+    pc.printout("Digite 'FILE=n' para desabilitar o salvamento de arquivos'\n", pc.BLUE))
     pc.printout("Type 'JSON=y' to export results to a JSON files like '<target username>_<command>.json (default is "
-                "disabled)'\n")
-    pc.printout("Type 'JSON=n' to disable exporting to files'\n")
+                "disabled)'\n", pc.BLUE))
+    pc.printout("Type 'JSON=n' to disable exporting to files'\n", pc.BLUE))
 
 
 def cmdlist():
