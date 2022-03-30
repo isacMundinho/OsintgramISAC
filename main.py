@@ -19,7 +19,7 @@ except:
 def printlogo():
     pc.printout(artwork.ascii_art, pc.PURPLE)
     pc.printout("\----------------------------------------------\n\n", pc.YELLOW)
-    pc.printout("Digite 'list' para ver todos os comandos.\n")
+    pc.printout("Digite 'list'", pc.YELLOW ,"para ver todos os comandos.\n")
     pc.printout("Type 'FILE=y' to save results to files like '<target username>_<command>.txt (default is disabled)'\n")
     pc.printout("Type 'FILE=n' to disable saving to files'\n")
     pc.printout("Type 'JSON=y' to export results to a JSON files like '<target username>_<command>.json (default is "
