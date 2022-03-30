@@ -18,8 +18,8 @@ except:
 
 def printlogo():
     pc.printout(artwork.ascii_art, pc.RED)
-    pc.printout("\----------------------------------------------\n\n", pc.YELLOW)
-    pc.printout("Digite 'list'", pc.YELLOW ,"para ver todos os comandos.\n")
+    pc.printout("----------------------------------------------\n\n", pc.YELLOW)
+    pc.printout("Digite 'list' para ver todos os comandos.\n")
     pc.printout("Type 'FILE=y' to save results to files like '<target username>_<command>.txt (default is disabled)'\n")
     pc.printout("Type 'FILE=n' to disable saving to files'\n")
     pc.printout("Type 'JSON=y' to export results to a JSON files like '<target username>_<command>.json (default is "
@@ -51,7 +51,7 @@ def cmdlist():
     pc.printout("fwingsemail\t")
     print("Get email of users followed by target")
     pc.printout("fwersnumber\t")
-    print("Get phone number of target followers")
+    print("Pega o número dos seguidores do perfil")
     pc.printout("fwingsnumber\t")
     print("Get phone number of users followed by target")    
     pc.printout("hashtags\t")
