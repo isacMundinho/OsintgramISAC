@@ -17,7 +17,7 @@ except:
 
 
 def printlogo():
-    pc.printout(artwork.ascii_art, pc.PURPLE)
+    pc.printout(artwork.ascii_art, pc.RED)
     pc.printout("\----------------------------------------------\n\n", pc.YELLOW)
     pc.printout("Digite 'list'", pc.YELLOW ,"para ver todos os comandos.\n")
     pc.printout("Type 'FILE=y' to save results to files like '<target username>_<command>.txt (default is disabled)'\n")
