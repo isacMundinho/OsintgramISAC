@@ -19,7 +19,7 @@ except:
 def printlogo():
     pc.printout(artwork.ascii_art, pc.RED)
     pc.printout("----------------------------------------------\n\n", pc.RED)
-    pc.printout("Digite 'list' para ver todos os comandos.\n", pc.BLUE)
+    pc.printout("Digite 'lista' para ver todos os comandos.\n", pc.BLUE)
     pc.printout("Digite 'FILE=y' para salvar os resultados em arquivos como '<target username>_<command>.txt (desabilitado por padrão)'\n", pc.BLUE))
     pc.printout("Digite 'FILE=n' para desabilitar o salvamento de arquivos'\n", pc.BLUE))
     pc.printout("Type 'JSON=y' to export results to a JSON files like '<target username>_<command>.json (default is "
@@ -81,7 +81,7 @@ def cmdlist():
 
 
 def signal_handler(sig, frame):
-    pc.printout("\nGoodbye!\n", pc.RED)
+    pc.printout("\nTchauTchau!\n", pc.RED)
     sys.exit(0)
 
 
@@ -93,7 +93,7 @@ def completer(text, state):
         return None
 
 def _quit():
-    pc.printout("Goodbye!\n", pc.RED)
+    pc.printout("TchauTchau\n", pc.RED)
     sys.exit(0)
 
 
@@ -123,9 +123,9 @@ api = Osintgram(args.id, args.file, args.json, args.command, args.output, args.c
 
 
 commands = {
-    'list':             cmdlist,
-    'help':             cmdlist,
-    'quit':             _quit,
+    'lista':             cmdlist,
+    'ajuda':             cmdlist,
+    'sair':             _quit,
     'exit':             _quit,
     'addrs':            api.get_addrs,
     'cache':            api.clear_cache,
@@ -177,7 +177,7 @@ while True:
         else:
             gnureadline.parse_and_bind("tab: complete")
             gnureadline.set_completer(completer)
-        pc.printout("Run a command: ", pc.YELLOW)
+        pc.printout("O que deseja fazer: ", pc.YELLOW)
         cmd = input()
 
         _cmd = commands.get(cmd)
